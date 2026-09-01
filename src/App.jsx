@@ -3,7 +3,7 @@ import Dashboard from './Dashboard.jsx';
 import RequestDetail from './RequestDetail.jsx';
 import FilterPanel from './FilterPanel.jsx';
 
-const API_BASE_URL = 'http://localhost:4001';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:4001';
 const STORAGE_KEY = 'service-desk-requests-v1';
 const seed = [
   { id: '1', customer: 'BMN', ref: 'BMN-001', source: 'ไลน์', receivedAt: '2026-08-27T16:47', ticket: 'BMN000001', location: 'Sukhumvit Corner', contact: 'คุณไจ๋', phone: '', description: 'สื่อลูกค้าเป็นสีขาว ส่วนผลแสดงจอภาพเป็นอมฟ้า', jobType: 'แก้ไขหน้างาน', status: 'รอลูกค้าสรุปงาน', assignee: 'เอ็กซ์', appointment: '', completedAt: '2026-08-27T16:47', action: '', notes: 'รอคอนเฟิร์มกับยูนิลูมีน' },
